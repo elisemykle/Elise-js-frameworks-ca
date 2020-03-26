@@ -2,6 +2,17 @@
 
 ##Instructions:
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 You can use either React or Vue for the assignment, and you can use any React or Vue UI library (such as React Boostrap, Material UI or Bootstrap Vue) or write your own styles.
 
 We will be using the RAWG Video Games Database API for the assignment.
