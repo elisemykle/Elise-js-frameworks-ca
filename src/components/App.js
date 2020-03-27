@@ -5,8 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import HomePage from "./HomePage";
-import Game from "./Game";
+import GameDetail from "./GameDetail";
 import ContactPage from "./ContactPage";
+import GameItem from "./GameItem";
+import SearchGames from "./SearchGames";
 import {
     BrowserRouter as Router,
     Switch,
@@ -19,13 +21,12 @@ export default function App() {
       <Router className="App">
           <Navbar bg="dark" variant="dark" expand="lg">
               <NavLink to="/" exact>
-                  <Navbar.Brand>REACT-CA</Navbar.Brand>
+                  <Navbar.Brand>RAWG</Navbar.Brand>
               </NavLink>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
                       <NavLink to="/" exact className="nav-link">HOME</NavLink>
-                      <NavLink to="/game" className="nav-link">GAME</NavLink>
                       <NavLink to="/contactpage" className="nav-link">CONTACT</NavLink>
                   </Nav>
               </Navbar.Collapse>
@@ -34,7 +35,7 @@ export default function App() {
               <Switch>
                   <Route path="/" exact component={HomePage}>
                   </Route>
-                  <Route path="/game/:id" component={Game}/>
+                  <Route path="/gameDetail/:id" component={GameDetail}/>
                   <Route path="/contactpage" component={ContactPage}/>
               </Switch>
           </Container>

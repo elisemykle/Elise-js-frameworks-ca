@@ -1,17 +1,6 @@
-## JavaScript Frameworks Course Assignment
+##JavaScript Frameworks Course Assignment
 
-## Instructions:
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Instructions:
 
 You can use either React or Vue for the assignment, and you can use any React or Vue UI library (such as React Boostrap, Material UI or Bootstrap Vue) or write your own styles.
 
@@ -23,7 +12,7 @@ https://api.rawg.io/api/games
 
 Only Level 1 is required, 2 and 3 are optional
 
-## Level 1
+##Level 1
 Create a menu with the following paths:
 
 / - home page
@@ -31,7 +20,7 @@ Create a menu with the following paths:
 
 You will need to create routes for these as well as a route for the details page. This route can be /game/:id
 
-## Home page:
+##Home page:
 Make a call to the base URL and display the games returned.
 
 Each game should display the following:
@@ -46,7 +35,7 @@ Each game should display the following:
 
 There should be a search box above the results that filters the games on their titles.
 
-## Game details page:
+##Game details page:
 Retrieve the id from the URL, add it to the base URL and make an API call with this new URL.
 
 Display the following with the results of the call:
@@ -56,7 +45,7 @@ Display the following with the results of the call:
 - Description
 - Website link
 
-## Contact page:
+##Contact page:
 This page should contain the following inputs and validation rules:
 
 - First name - required, minimum 2 characters

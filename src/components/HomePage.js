@@ -26,17 +26,17 @@ export default function HomePage() {
 
     return (
         <div>
-            <h1>Games</h1>
+            <h1>Home</h1>
             <ul>
                 {
                     games.map((game, index) =>
-                        <li key={index}><img src={game.background_image} className="gameimage" />
-                            <p className="gamename">{game.name}</p>
-                            <p className="gamereleasedtitle">Released</p>
-                            <p className="gamereleased">{game.released}</p>
-                            <p className="gameratingtitle">Rating</p>
-                            <p className="gamerating">{game.rating}</p>
-                            <button>Read More</button>
+                        <li key={index}><img src={game.background_image} className="game--image" />
+                            <p className="game--name">{game.name}</p>
+                            <p className="game--releasedtitle">Released</p>
+                            <p className="game--released">{game.released}</p>
+                            <p className="game--ratingtitle">Rating</p>
+                            <p className="game--rating">{game.rating}</p>
+                            <button className="game--button">Read More</button>
                         </li>
                     )
                 }

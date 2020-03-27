@@ -46,49 +46,83 @@
     padding-bottom: 15px;
 }
 
+label{
+      font-weight: 500;
+      font-size: 16px;
+}
+
+p{
+    color: #5F9EA0;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
 .btn-primary{
-    background-color: #343a40;
+    background-color: #5F9EA0;
     color: white;
     border: none;
     font-size: 14px;
+    font-weight: 500;
     padding: 10px 15px;
 }
 
 .btn-primary:hover{
-    background-color: #DCDCDC;
-    color: black;
+    background-color: #343a40;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: #5F9EA0 !important;
+}
+
+.nav-link.active{
+    color: #5F9EA0 !important;
 }
 
 li {
     list-style-type: none;
 }
 
-.gameimage{
+.game--image{
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
 
-.gamename{
-    color: pink;
+.game--name{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5F9EA0;
 }
 
-.gamereleased{
-    color: yellow;
+.game--released{
+    color: black;
 }
 
-.gamereleasedtitle{
-    color: blue;
+.game--releasedtitle{
+    color: black;
 }
 
-.gameratingtitle{
-    color: purple;
+.game--ratingtitle{
+    color: black;
 }
 
-.gamerating{
-    color: green;
+.game--rating{
+    color: black;
 }
 
-.gamebutton{
-    color: orange;
+.game--button{
+    background-color: #5F9EA0;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.game--button:hover{
+    background-color: #343a40;
+    color: white;
 }

@@ -32,28 +32,28 @@ const schema = yup.object().shape({
         <Form onSubmit={handleSubmit(onSubmit)}>
             <Form.Group>
 				<div className="contactheading">
-				<h2>CONTACT US!</h2>
+				<h2>Contact us</h2>
 				</div>
-                <Form.Label>Your first name</Form.Label>
+                <Form.Label>First name</Form.Label>
                 <Form.Control name="firstname" placeholder="Enter your first name" ref={register}/>
-                {errors.firstname && <p>please enter minimum 2 characters.</p>}
+                {errors.firstname && <p>Please enter minimum 2 characters.</p>}
             </Form.Group>
             <Form.Group>
-                <Form.Label>Your last name</Form.Label>
+                <Form.Label>Last name</Form.Label>
                 <Form.Control name="lastname" placeholder="Enter your last name" ref={register}/>
-                {errors.lastname && <p>please enter minimum 2 characters.</p>}
+                {errors.lastname && <p>Please enter minimum 2 characters.</p>}
             </Form.Group>
 			<Form.Group>
                 <Form.Label>Email adress</Form.Label>
                 <Form.Control name="emailadress" placeholder="Enter your email" ref={register}/>
-                {errors.emailadress && <p>please enter in a valid email format.</p>}
+                {errors.emailadress && <p>Please enter in a valid email format.</p>}
             </Form.Group>
 			<Form.Group>
 				<Form.Label>Message</Form.Label>
 				<Form.Control name="message" placeholder="Type your message here..." ref={register}/>
-				{errors.message && <p>please enter in minimum 10 characters.</p>}
+				{errors.message && <p>Please enter in minimum 10 characters.</p>}
 			</Form.Group>
-            <Button type="submit">Send</Button>
+            <Button type="submit">Submit</Button>
         </Form>
         )
 }
