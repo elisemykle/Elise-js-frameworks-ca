@@ -1,62 +1,21 @@
-.App {
-    text-align: center;
+/* ---------- HOMEPAGE ---------- */
+
+/* Removes the dots from the list */
+li {
+    list-style-type: none;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Changes the color of the links in navbar when it's active */
+.nav-link.active{
+    color: #5F9EA0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Changes the color of the links in navbar when it's hover over */
+.navbar-brand:hover{
+    color: #5F9EA0 !important;
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container{
-    padding-top: 50px;
-}
-
-.contactheading{
-    color: #343a40;
-    padding-bottom: 15px;
-}
-
-label{
-      font-weight: 500;
-      font-size: 16px;
-}
-
-p{
-    color: #5F9EA0;
-    font-size: 15px;
-    padding-top: 5px;
-}
-
+/* Changes the color of button when it's active */
 .btn-primary{
     background-color: #5F9EA0;
     color: white;
@@ -66,27 +25,26 @@ p{
     padding: 10px 15px;
 }
 
+/* Changes the color of button when it's hover */
 .btn-primary:hover{
     background-color: #343a40;
     color: white;
 }
 
-.navbar-brand:hover{
-    color: #5F9EA0 !important;
+/* Changes the width/height of the search box */
+.Search--Box{
+    height: 40px;
+    width: 500px;
 }
 
-.nav-link.active{
-    color: #5F9EA0 !important;
+/* Changes button for search box */
+.Search--Button{
 }
 
-li {
-    list-style-type: none;
-}
-
+/* ---------- HOMEPAGE API LIST ---------- */
 .game--image{
     width: 250px;
-    height: 250px;
-    object-fit: cover;
+    height: 150px;
 }
 
 .game--name{
@@ -96,22 +54,7 @@ li {
     color: #5F9EA0;
 }
 
-.game--released{
-    color: black;
-}
-
-.game--releasedtitle{
-    color: black;
-}
-
-.game--ratingtitle{
-    color: black;
-}
-
-.game--rating{
-    color: black;
-}
-
+/* Changes the color of the homepage game button when it's active */
 .game--button{
     background-color: #5F9EA0;
     color: white;
@@ -122,7 +65,34 @@ li {
     border-radius: 4px;
 }
 
+/* Changes the color of the homepage game button when it's hovered */
 .game--button:hover{
     background-color: #343a40;
     color: white;
+}
+
+/* ---------- CONTACTPAGE ---------- */
+
+/* Change the space between the contact us heading and contact form */
+.container{
+    padding-top: 50px;
+}
+
+/* Changes the contact form heading */
+.contactheading{
+    color: #343a40;
+    padding-bottom: 15px;
+}
+
+/* Changes the form label of contact form font */
+label{
+      font-weight: 500;
+      font-size: 16px;
+}
+
+/* Changes the contact form errors */
+p{
+    color: #5F9EA0;
+    font-size: 15px;
+    padding-top: 5px;
 }
